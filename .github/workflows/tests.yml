@@ -1,4 +1,4 @@
-name: "Unit & Smoke Tests - mamba"
+name: "Unit & Smoke Tests - mamba me"
 on:
   pull_request:
     paths:
