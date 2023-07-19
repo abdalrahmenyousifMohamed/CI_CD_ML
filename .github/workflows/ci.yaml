@@ -1,9 +1,25 @@
 name: learn-github-actions
-on: [push]
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   my_first_action:
     runs-on: ubuntu-latest
+
     steps:
-      - name : hola
-      - run: | 
-           echo "hello pop"
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Print greeting
+        run: |
+          echo "Hello, world!"
+
+      - name: Another step
+        run: |
+          echo "This is another step."
+
+      - name: Final step
+        run: |
+          echo "This is the final step."
