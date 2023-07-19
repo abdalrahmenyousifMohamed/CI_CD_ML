@@ -5,7 +5,7 @@ jobs:
   input_output:
     runs-on: ubuntu-latest
     steps:
-      - name: my_var
+      - name: set-var
         id: my_var
         shell: python
         run: |
