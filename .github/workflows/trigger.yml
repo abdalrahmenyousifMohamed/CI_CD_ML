@@ -1,0 +1,13 @@
+name: trigger-demo
+on:
+  push:
+     branches:
+        - main
+  pull_request:
+  workflow_dispath:
+
+jobs:
+  trigger-demo:
+    runs-on: ubuntu-latest
+    step:
+      - run: echo "hello triggerd successfully"
