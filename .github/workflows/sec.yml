@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  sec:
+  runs-on: ubuntu-latest
+  steps:
+    run: echo $MY_ENV
+  
+  env:
+    MY_VAR: ${{sec.secrets}}
