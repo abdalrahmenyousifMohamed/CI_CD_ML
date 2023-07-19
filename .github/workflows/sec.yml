@@ -1,7 +1,7 @@
 on: push
 
 jobs:
-  sec:
+  secrets:
     runs-on: ubuntu-latest
     steps:
     - run: |
@@ -9,5 +9,5 @@ jobs:
         print(len(os.getenv('MY_VAR')))
       shell: python
       env:
-        MY_VAR: ${{ sec.secrets }}
+        MY_VAR: ${{ secrets.secrets }}
         
