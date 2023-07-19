@@ -1,8 +1,9 @@
 name: learn-github-actions
 on: [push]
 jobs:
-  check-bats-version:
+  my_first_action:
     runs-on: ubuntu-latest
     steps:
-      - name : hello_mw
-      - run: echo "hello pop"
+      - name : hola
+      - run: | 
+           echo "hello pop"
