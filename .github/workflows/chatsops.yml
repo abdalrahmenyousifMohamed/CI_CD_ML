@@ -16,7 +16,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: see payload # this step is for debugging purposes only , so we can see payload
-        run: echo "PAYLOAD:\n${PAYLOAD}\n"
+        run: echo "PAYLOAD :\n${PAYLOAD}\n"
         env:
            PAYLOAD: ${{ toJSON{github.event) }}
       - name: filter for magic comment
