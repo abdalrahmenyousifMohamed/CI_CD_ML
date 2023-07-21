@@ -7,7 +7,7 @@ permissions:
    pull-requests: write
 
 env:
-  MAGIC_COMMENT: "/pepo" # param
+  MAGIC_COMMENT: "/pepo_p" # param
 
 jobs:
   see-comment:
